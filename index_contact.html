@@ -7,6 +7,7 @@
     <title>פז - ויקטוריה</title>
     <link rel="icon" type="image" href="/images/favicon1616.png">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header class="header-main">
@@ -140,29 +141,35 @@
                     <p>* השדות המסומנים בכוכבית (*) הינם שדות חובה</p>
                     <form action="" class="contact-form">
                         <!-- <legend>  -->
-                        
                             <label for="first-name" class="form-label">*שם פרטי</label>
-                            <input type="text" id="first-name" class="form-input">
+                            <input type="text" id="first-name" class="form-input" required>
+                            <label for="first-name" class="form-error">שדה חובה</label>
+
                             <label for="last-name" class="form-label">*שם משפחה</label>
-                            <input type="text" id="last-name" class="form-input">
+                            <input type="text" id="last-name" class="form-input" required>
+                            <label for="last-name" class="form-error">שדה חובה</label>
+
                             <label for="phone" class="form-label">*טלפון</label>
-                            <input type="text" id="phone" class="form-input">
+                            <input type="number" id="phone" class="form-input" required>
+                            <label for="phone" class="form-error">שדה חובה</label>
+
                             <label for="email" class="form-label">* E-mail</label>
-                            <input type="text" id="email" class="form-input">
-                            <input type="text-area" id="form-textarea" cols="5" rows="5" placeholder="תוכן הפנייה">
+                            <input type="email" id="email" class="form-input" required>
+                            <label for="email" class="form-error">שדה חובה</label>
+                            
+                            <textarea id="form-textarea" name="form-textarea" rows="5" cols="5" placeholder="תוכן הפנייה"></textarea> <!--maxlength="500"-->
+                            
                             <button type="button" class="form-btn">שליחה</button>
                         <!-- </legend>  -->
                     </form>
                 </div>
             </div>
-        </div>
-        <div class="article-layout-contact-details">
             <div class="article-content-contact-details">
                 <div class="details-upper-box">
                     <h1>פרטי יצירת קשר</h1>
                     <hr>
-                    <p>פז חברת נפט בע"מ
-                        <br/>
+                    <p>פז חברת נפט בע"מ</p>
+                    <p>
                         יורו פארק, בניין הולנד
                         <br/>
                         קיבוץ יקום 60972
@@ -175,14 +182,10 @@
                 <div class="details-lower-box">
                     <h1>עוד בפז</h1>
                     <hr>
-                    <p>ליצירת קשר עם דוברות פז
-                        <br/>
-                        <a href="#">לחצו כאן>></a>
-                        <br>
-                        רוצים לעבוד בפז?
-                        <br>
-                        <a href="#">לחצו כאן>></a>
-                    </p>
+                    <p>ליצירת קשר עם דוברות פז</p>
+                        <a class="contact-details-first-link" href="#">לחצו כאן>></a>
+                        <p>רוצים לעבוד בפז?</p>
+                        <a class="contact-details-second-link" href="#">לחצו כאן>></a>
                 </div>
             </div>
         </div>
